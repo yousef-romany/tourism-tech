@@ -14,127 +14,127 @@ import { useState } from "react"
 import { cn } from "@/lib/utils"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-const translations = {
-  en: {
-    title: "Contact Us",
-    subtitle: "Get in touch with our team",
-    form: {
-      name: "Full Name",
-      email: "Email Address",
-      phone: "Phone Number",
-      subject: "Subject",
-      message: "Your Message",
-      submit: "Send Message",
-      success: "Your message has been sent successfully!",
-    },
-    info: {
-      title: "Contact Information",
-      address: {
-        label: "Address",
-        value: "Cairo, Egypt",
-      },
-      phone: {
-        label: "Phone",
-        value: "+20 123 456 7890",
-      },
-      email: {
-        label: "Email",
-        value: "info@digitoursolutions.com",
-      },
-    },
-    faq: {
-      title: "Frequently Asked Questions",
-      items: [
-        {
-          question: "What services do you offer for tourism businesses?",
-          answer:
-            "We offer a comprehensive range of digital services including website development, mobile app development, global platform management, SEO optimization, social media management, and technical support tailored specifically for tourism businesses in Egypt.",
-        },
-        {
-          question: "How long does it take to develop a tourism website?",
-          answer:
-            "The timeline for website development varies depending on the complexity and requirements of your project. Typically, a standard tourism website takes 4-6 weeks from concept to launch, while more complex projects with booking systems and custom features may take 8-12 weeks.",
-        },
-        {
-          question: "Do you offer ongoing support after project completion?",
-          answer:
-            "Yes, we offer various support packages to ensure your digital assets continue to perform optimally. Our support includes regular maintenance, security updates, content updates, and technical assistance whenever you need it.",
-        },
-        {
-          question: "Can you help with existing accounts on platforms like Viator and TripAdvisor?",
-          answer:
-            "We specialize in optimizing existing accounts on global travel platforms. We can audit your current listings, improve content, enhance SEO, resolve any issues, and implement strategies to increase your visibility and bookings.",
-        },
-        {
-          question: "What makes your services specific to tourism businesses?",
-          answer:
-            "Our team has extensive experience in the tourism industry in Egypt. We understand the unique challenges and opportunities in this sector, including seasonality, target markets, booking patterns, and competitive landscapes. All our solutions are tailored with these specific considerations in mind.",
-        },
-      ],
-    },
-  },
-  ar: {
-    title: "اتصل بنا",
-    subtitle: "تواصل مع فريقنا",
-    form: {
-      name: "الاسم الكامل",
-      email: "البريد الإلكتروني",
-      phone: "رقم الهاتف",
-      subject: "الموضوع",
-      message: "رسالتك",
-      submit: "إرسال الرسالة",
-      success: "تم إرسال رسالتك بنجاح!",
-    },
-    info: {
-      title: "معلومات الاتصال",
-      address: {
-        label: "العنوان",
-        value: "القاهرة، مصر",
-      },
-      phone: {
-        label: "الهاتف",
-        value: "+20 123 456 7890",
-      },
-      email: {
-        label: "البريد الإلكتروني",
-        value: "info@digitoursolutions.com",
-      },
-    },
-    faq: {
-      title: "الأسئلة الشائعة",
-      items: [
-        {
-          question: "ما هي الخدمات التي تقدمونها لشركات السياحة؟",
-          answer:
-            "نقدم مجموعة شاملة من الخدمات الرقمية بما في ذلك تطوير المواقع الإلكترونية، وتطوير تطبيقات الجوال، وإدارة المنصات العالمية، وتحسين محركات البحث، وإدارة وسائل التواصل الاجتماعي، والدعم الفني المصمم خصيصًا لشركات السياحة في مصر.",
-        },
-        {
-          question: "كم من الوقت يستغرق تطوير موقع سياحي؟",
-          answer:
-            "يختلف الجدول الزمني لتطوير الموقع حسب تعقيد ومتطلبات مشروعك. عادةً، يستغرق موقع السياحة القياسي 4-6 أسابيع من المفهوم إلى الإطلاق، بينما قد تستغرق المشاريع الأكثر تعقيدًا مع أنظمة الحجز والميزات المخصصة 8-12 أسبوعًا.",
-        },
-        {
-          question: "هل تقدمون دعمًا مستمرًا بعد اكتمال المشروع؟",
-          answer:
-            "نعم، نقدم حزم دعم متنوعة لضمان استمرار أداء أصولك الرقمية بشكل مثالي. يشمل دعمنا الصيانة المنتظمة، وتحديثات الأمان، وتحديثات المحتوى، والمساعدة الفنية عندما تحتاجها.",
-        },
-        {
-          question: "هل يمكنكم المساعدة في الحسابات الموجودة على منصات مثل Viator و TripAdvisor؟",
-          answer:
-            "بالتأكيد! نحن متخصصون في تحسين الحسابات الموجودة على منصات السفر العالمية. يمكننا تدقيق قوائمك الحالية، وتحسين المحتوى، وتعزيز تحسين محركات البحث، وحل أي مشكلات، وتنفيذ استراتيجيات لزيادة ظهورك وحجوزاتك.",
-        },
-        {
-          question: "ما الذي يجعل خدماتكم خاصة بشركات السياحة؟",
-          answer:
-            "يتمتع فريقنا بخبرة واسعة في صناعة السياحة في مصر. نحن نفهم التحديات والفرص الفريدة في هذا القطاع، بما في ذلك الموسمية، والأسواق المستهدفة، وأنماط الحجز، والمشهد التنافسي. جميع حلولنا مصممة مع مراعاة هذه الاعتبارات المحددة.",
-        },
-      ],
-    },
-  },
-}
 
 export default function ContactPage() {
   const { language, direction } = useLanguage()
+  const translations = {
+    en: {
+      title: "Contact Us",
+      subtitle: "Get in touch with our team",
+      form: {
+        name: "Full Name",
+        email: "Email Address",
+        phone: "Phone Number",
+        subject: "Subject",
+        message: "Your Message",
+        submit: "Send Message",
+        success: "Your message has been sent successfully!",
+      },
+      info: {
+        title: "Contact Information",
+        address: {
+          label: "Address",
+          value: "Cairo, Egypt",
+        },
+        phone: {
+          label: "Phone",
+          value: language === "ar" ? "0961 510 155 (20+)" : "(+20) 155 510 0961",
+        },
+        email: {
+          label: "Email",
+          value: "info@digitoursolutions.com",
+        },
+      },
+      faq: {
+        title: "Frequently Asked Questions",
+        items: [
+          {
+            question: "What services do you offer for tourism businesses?",
+            answer:
+              "We offer a comprehensive range of digital services including website development, mobile app development, global platform management, SEO optimization, social media management, and technical support tailored specifically for tourism businesses in Egypt.",
+          },
+          {
+            question: "How long does it take to develop a tourism website?",
+            answer:
+              "The timeline for website development varies depending on the complexity and requirements of your project. Typically, a standard tourism website takes 4-6 weeks from concept to launch, while more complex projects with booking systems and custom features may take 8-12 weeks.",
+          },
+          {
+            question: "Do you offer ongoing support after project completion?",
+            answer:
+              "Yes, we offer various support packages to ensure your digital assets continue to perform optimally. Our support includes regular maintenance, security updates, content updates, and technical assistance whenever you need it.",
+          },
+          {
+            question: "Can you help with existing accounts on platforms like Viator and TripAdvisor?",
+            answer:
+              "We specialize in optimizing existing accounts on global travel platforms. We can audit your current listings, improve content, enhance SEO, resolve any issues, and implement strategies to increase your visibility and bookings.",
+          },
+          {
+            question: "What makes your services specific to tourism businesses?",
+            answer:
+              "Our team has extensive experience in the tourism industry in Egypt. We understand the unique challenges and opportunities in this sector, including seasonality, target markets, booking patterns, and competitive landscapes. All our solutions are tailored with these specific considerations in mind.",
+          },
+        ],
+      },
+    },
+    ar: {
+      title: "اتصل بنا",
+      subtitle: "تواصل مع فريقنا",
+      form: {
+        name: "الاسم الكامل",
+        email: "البريد الإلكتروني",
+        phone: "رقم الهاتف",
+        subject: "الموضوع",
+        message: "رسالتك",
+        submit: "إرسال الرسالة",
+        success: "تم إرسال رسالتك بنجاح!",
+      },
+      info: {
+        title: "معلومات الاتصال",
+        address: {
+          label: "العنوان",
+          value: "القاهرة، مصر",
+        },
+        phone: {
+          label: "الهاتف",
+          value: language === "ar" ? "0961 510 155 (20+)" : "(+20) 155 510 0961",
+        },
+        email: {
+          label: "البريد الإلكتروني",
+          value: "info@digitoursolutions.com",
+        },
+      },
+      faq: {
+        title: "الأسئلة الشائعة",
+        items: [
+          {
+            question: "ما هي الخدمات التي تقدمونها لشركات السياحة؟",
+            answer:
+              "نقدم مجموعة شاملة من الخدمات الرقمية بما في ذلك تطوير المواقع الإلكترونية، وتطوير تطبيقات الجوال، وإدارة المنصات العالمية، وتحسين محركات البحث، وإدارة وسائل التواصل الاجتماعي، والدعم الفني المصمم خصيصًا لشركات السياحة في مصر.",
+          },
+          {
+            question: "كم من الوقت يستغرق تطوير موقع سياحي؟",
+            answer:
+              "يختلف الجدول الزمني لتطوير الموقع حسب تعقيد ومتطلبات مشروعك. عادةً، يستغرق موقع السياحة القياسي 4-6 أسابيع من المفهوم إلى الإطلاق، بينما قد تستغرق المشاريع الأكثر تعقيدًا مع أنظمة الحجز والميزات المخصصة 8-12 أسبوعًا.",
+          },
+          {
+            question: "هل تقدمون دعمًا مستمرًا بعد اكتمال المشروع؟",
+            answer:
+              "نعم، نقدم حزم دعم متنوعة لضمان استمرار أداء أصولك الرقمية بشكل مثالي. يشمل دعمنا الصيانة المنتظمة، وتحديثات الأمان، وتحديثات المحتوى، والمساعدة الفنية عندما تحتاجها.",
+          },
+          {
+            question: "هل يمكنكم المساعدة في الحسابات الموجودة على منصات مثل Viator و TripAdvisor؟",
+            answer:
+              "بالتأكيد! نحن متخصصون في تحسين الحسابات الموجودة على منصات السفر العالمية. يمكننا تدقيق قوائمك الحالية، وتحسين المحتوى، وتعزيز تحسين محركات البحث، وحل أي مشكلات، وتنفيذ استراتيجيات لزيادة ظهورك وحجوزاتك.",
+          },
+          {
+            question: "ما الذي يجعل خدماتكم خاصة بشركات السياحة؟",
+            answer:
+              "يتمتع فريقنا بخبرة واسعة في صناعة السياحة في مصر. نحن نفهم التحديات والفرص الفريدة في هذا القطاع، بما في ذلك الموسمية، والأسواق المستهدفة، وأنماط الحجز، والمشهد التنافسي. جميع حلولنا مصممة مع مراعاة هذه الاعتبارات المحددة.",
+          },
+        ],
+      },
+    },
+  }
   const t = translations[language]
   const [isSubmitted, setIsSubmitted] = useState(false)
 

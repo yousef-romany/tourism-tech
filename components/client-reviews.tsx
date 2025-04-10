@@ -20,7 +20,7 @@ const reviews = [
     rating: 5,
     text: {
       en: "TripLaunch transformed our online presence completely. Our bookings increased by 60% within just three months of launching our new website and implementing their platform management strategy. Their team's expertise in tourism tech is unmatched in Egypt.",
-      ar: "قامت تورتك مصر بتحويل وجودنا عبر الإنترنت بشكل كامل. زادت حجوزاتنا بنسبة 60٪ في غضون ثلاثة أشهر فقط من إطلاق موقعنا الجديد وتنفيذ استراتيجية إدارة المنصة الخاصة بهم. خبرة فريقهم في تكنولوجيا السياحة لا مثيل لها في مصر.",
+      ar: "قامت تريب لانش مصر بتحويل وجودنا عبر الإنترنت بشكل كامل. زادت حجوزاتنا بنسبة 60٪ في غضون ثلاثة أشهر فقط من إطلاق موقعنا الجديد وتنفيذ استراتيجية إدارة المنصة الخاصة بهم. خبرة فريقهم في تكنولوجيا السياحة لا مثيل لها في مصر.",
     },
     author: {
       en: "Ahmed Hassan, CEO",
@@ -37,7 +37,7 @@ const reviews = [
     rating: 5,
     text: {
       en: "The mobile app developed by TripLaunch has revolutionized how our customers experience our diving tours. The offline capabilities and interactive features have received outstanding feedback from international tourists. Our bookings have increased by 45% since launching the app.",
-      ar: "لقد أحدث التطبيق الجوال الذي طورته تورتك مصر ثورة في كيفية تجربة عملائنا لجولات الغوص لدينا. حصلت القدرات غير المتصلة بالإنترنت والميزات التفاعلية على ردود فعل ممتازة من السياح الدوليين. زادت حجوزاتنا بنسبة 45٪ منذ إطلاق التطبيق.",
+      ar: "لقد أحدث التطبيق الجوال الذي طورته تريب لانش مصر ثورة في كيفية تجربة عملائنا لجولات الغوص لدينا. حصلت القدرات غير المتصلة بالإنترنت والميزات التفاعلية على ردود فعل ممتازة من السياح الدوليين. زادت حجوزاتنا بنسبة 45٪ منذ إطلاق التطبيق.",
     },
     author: {
       en: "Mohamed Salah, Operations Manager",
@@ -55,7 +55,7 @@ const reviews = [
     text: {
       en: "Working with TripLaunch to manage our global platform presence has been a game-changer. Their expertise in optimizing our listings on Viator and GetYourGuide has significantly increased our international bookings by 75% year-over-year. Their responsive support team is always available when we need them.",
       ar: "كان العمل مع ت  Their responsive support team is always available when we need them.",
-      ar: "كان العمل مع تورتك مصر لإدارة وجودنا على المنصات العالمية بمثابة تغيير في قواعد اللعبة. أدت خبرتهم في تحسين قوائمنا على Viator و GetYourGuide إلى زيادة حجوزاتنا الدولية بنسبة 75٪ على أساس سنوي. فريق الدعم سريع الاستجابة لديهم متاح دائمًا عندما نحتاج إليهم.",
+      ar: "كان العمل مع تريب لانش مصر لإدارة وجودنا على المنصات العالمية بمثابة تغيير في قواعد اللعبة. أدت خبرتهم في تحسين قوائمنا على Viator و GetYourGuide إلى زيادة حجوزاتنا الدولية بنسبة 75٪ على أساس سنوي. فريق الدعم سريع الاستجابة لديهم متاح دائمًا عندما نحتاج إليهم.",
     },
     author: {
       en: "Laila Mahmoud, Marketing Director",
@@ -72,7 +72,7 @@ const reviews = [
     rating: 5,
     text: {
       en: "The SEO and content marketing strategy implemented by TripLaunch has dramatically improved our visibility in search results. We're now ranking on the first page for key tourism keywords, resulting in a 90% increase in organic traffic and 50% more direct bookings through our website.",
-      ar: "أدت استراتيجية تحسين محركات البحث والتسويق بالمحتوى التي نفذتها تورتك مصر إلى تحسين ظهورنا بشكل كبير في نتائج البحث. نحن الآن نحتل مرتبة في الصفحة الأولى للكلمات الرئيسية للسياحة، مما أدى إلى زيادة بنسبة 90٪ في حركة المرور العضوية و 50٪ زيادة في الحجوزات المباشرة من خلال موقعنا.",
+      ar: "أدت استراتيجية تحسين محركات البحث والتسويق بالمحتوى التي نفذتها تريب لانش مصر إلى تحسين ظهورنا بشكل كبير في نتائج البحث. نحن الآن نحتل مرتبة في الصفحة الأولى للكلمات الرئيسية للسياحة، مما أدى إلى زيادة بنسبة 90٪ في حركة المرور العضوية و 50٪ زيادة في الحجوزات المباشرة من خلال موقعنا.",
     },
     author: {
       en: "Hossam Ali, General Manager",

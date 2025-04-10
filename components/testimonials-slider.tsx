@@ -13,7 +13,7 @@ const testimonials = [
     id: 1,
     content: {
       en: "TripLaunch transformed our online presence. Our bookings increased by 60% within the first three months of launching our new website and platform integrations.",
-      ar: "قامت تورتك مصر بتحويل وجودنا عبر الإنترنت. زادت حجوزاتنا بنسبة 60٪ خلال الأشهر الثلاثة الأولى من إطلاق موقعنا الجديد وتكاملات المنصة.",
+      ar: "قامت تريب لانش مصر بتحويل وجودنا عبر الإنترنت. زادت حجوزاتنا بنسبة 60٪ خلال الأشهر الثلاثة الأولى من إطلاق موقعنا الجديد وتكاملات المنصة.",
     },
     author: {
       en: "Ahmed Hassan",
@@ -29,7 +29,7 @@ const testimonials = [
     id: 2,
     content: {
       en: "The mobile app developed by TripLaunch has revolutionized how our customers experience our tours. The offline capabilities and interactive features have received outstanding feedback.",
-      ar: "لقد أحدث التطبيق الجوال الذي طورته تورتك مصر ثورة في كيفية تجربة عملائنا لجولاتنا. حصلت القدرات غير المتصلة بالإنترنت والميزات التفاعلية على ردود فعل ممتازة.",
+      ar: "لقد أحدث التطبيق الجوال الذي طورته تريب لانش مصر ثورة في كيفية تجربة عملائنا لجولاتنا. حصلت القدرات غير المتصلة بالإنترنت والميزات التفاعلية على ردود فعل ممتازة.",
     },
     author: {
       en: "Laila Mahmoud",
@@ -45,7 +45,7 @@ const testimonials = [
     id: 3,
     content: {
       en: "Working with TripLaunch to manage our global platform presence has been a game-changer. Their expertise in optimizing our listings on Viator and GetYourGuide has significantly increased our international bookings.",
-      ar: "كان العمل مع تورتك مصر لإدارة وجودنا على المنصة العالمية بمثابة تغيير في قواعد اللعبة. أدت خبرتهم في تحسين قوائمنا على Viator و GetYourGuide إلى زيادة حجوزاتنا الدولية بشكل كبير.",
+      ar: "كان العمل مع تريب لانش مصر لإدارة وجودنا على المنصة العالمية بمثابة تغيير في قواعد اللعبة. أدت خبرتهم في تحسين قوائمنا على Viator و GetYourGuide إلى زيادة حجوزاتنا الدولية بشكل كبير.",
     },
     author: {
       en: "Mohamed Salah",
