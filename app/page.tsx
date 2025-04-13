@@ -423,7 +423,7 @@ export default function Home() {
                     </p>
                     <Button asChild variant="link" className="p-0">
                       <Link href="/services" className="flex items-center gap-2">
-                        <span className={cn(language === "ar" ? "font-cairo" : "font-poppins")}>Learn More</span>
+                        <span className={cn(language === "ar" ? "font-cairo" : "font-poppins")}>{language === "ar" ? "أعرف مزيد" : "Learn More"}</span>
                         <ArrowRight className={cn("h-4 w-4", direction === "rtl" ? "rotate-180" : "")} />
                       </Link>
                     </Button>
@@ -456,7 +456,7 @@ export default function Home() {
                     </p>
                     <Button asChild variant="link" className="p-0">
                       <Link href="/services" className="flex items-center gap-2">
-                        <span className={cn(language === "ar" ? "font-cairo" : "font-poppins")}>Learn More</span>
+                        <span className={cn(language === "ar" ? "font-cairo" : "font-poppins")}>{language === "ar" ? "أعرف مزيد" : "Learn More"}</span>
                         <ArrowRight className={cn("h-4 w-4", direction === "rtl" ? "rotate-180" : "")} />
                       </Link>
                     </Button>
@@ -489,7 +489,7 @@ export default function Home() {
                     </p>
                     <Button asChild variant="link" className="p-0">
                       <Link href="/services" className="flex items-center gap-2">
-                        <span className={cn(language === "ar" ? "font-cairo" : "font-poppins")}>Learn More</span>
+                        <span className={cn(language === "ar" ? "font-cairo" : "font-poppins")}>{language === "ar" ? "أعرف مزيد" : "Learn More"}</span>
                         <ArrowRight className={cn("h-4 w-4", direction === "rtl" ? "rotate-180" : "")} />
                       </Link>
                     </Button>
@@ -522,7 +522,7 @@ export default function Home() {
                     </p>
                     <Button asChild variant="link" className="p-0">
                       <Link href="/services" className="flex items-center gap-2">
-                        <span className={cn(language === "ar" ? "font-cairo" : "font-poppins")}>Learn More</span>
+                        <span className={cn(language === "ar" ? "font-cairo" : "font-poppins")}>{language === "ar" ? "أعرف مزيد" : "Learn More"}</span>
                         <ArrowRight className={cn("h-4 w-4", direction === "rtl" ? "rotate-180" : "")} />
                       </Link>
                     </Button>

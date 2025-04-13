@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import Image from "next/image"
+import whatsappSymbol from "@/public/whatsapp-symbol-logo-svgrepo-com.svg"
 
 export default function WhatsAppButton() {
   return (
@@ -21,7 +23,8 @@ export default function WhatsAppButton() {
           rel="noopener noreferrer"
           aria-label="Contact us on WhatsApp"
         >
-          <svg
+          <Image src={whatsappSymbol} alt="what's app icon" />
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -37,7 +40,7 @@ export default function WhatsAppButton() {
             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
             <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
             <path d="M9.5 13.5c.5 1 1.5 1 2.5 1s2-.5 2.5-1" />
-          </svg>
+          </svg> */}
         </a>
       </Button>
     </motion.div>
